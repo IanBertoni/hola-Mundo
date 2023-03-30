@@ -1,0 +1,11 @@
+var numero = 12;
+console.log(numero);
+var nom = "soy facundo retamar";
+console.log('el tipo de la variable nom es', typeof nom);
+var isAlive = false;
+isAlive = true;
+var pi = 3.14;
+var clueless = 12;
+clueless = "pepe";
+clueless = true;
+var winniePoe = "variable nashe";
