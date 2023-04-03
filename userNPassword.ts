@@ -16,7 +16,7 @@ while (intentosRealizados < intentosPermitidos) {
 
   // Verificamos si la clave ingresada es la correcta
   if (claveIngresada === claveCorrecta) {
-    console.log("¡Clave correcta! Acceso permitido.");
+    console.log("Clave correcta! Acceso permitido.");
     // Salimos del bucle
     break;
   } else {
