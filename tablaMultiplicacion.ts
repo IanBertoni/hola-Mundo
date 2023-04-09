@@ -1,7 +1,7 @@
 import * as rls from 'readline-sync';
 
-let num = 0;
-let limite = 0;
+let num:number = 0;
+let limite:number = 0;
 
 // Este ciclo while valida que el usuario ingrese un número entero positivo para la variable num.
 while (num <= 0) {
@@ -14,7 +14,7 @@ while (limite <= 0) {
 }
 
 // Este ciclo for imprime la tabla de multiplicación del número ingresado por el usuario hasta el limite ya definido.
-for (let i = 1; i <= limite; i++) {
+for (let i:number = 1; i <= limite; i++) {
     const resultado = num * i;
     console.log(`${num} x ${i} = ${resultado}`);
 }

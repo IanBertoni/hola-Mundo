@@ -7,8 +7,11 @@
 import * as rls from 'readline-sync';
 
 let num: number;
-let max: number = Number.MIN_SAFE_INTEGER; // Inicializar con el mínimo valor posible 
+let max: number = Number.MIN_SAFE_INTEGER;
+let min: number = Number.MAX_SAFE_INTEGER;
+ // Inicializar con el mínimo valor posible 
 // La constante .MIN_SAFE_INTEGER es el número mínimo seguro en JavaScript para evitar perder precisión en operaciones matemáticas con números enteros.
+// MAX_SAFE_INTEGER es la constante predefinida en JS para el mayor número entero preciso en operaciones matemáticas.
 
 // Pedir números hasta que se ingrese un 0
 do {
@@ -18,10 +21,15 @@ do {
     if (num > max) {
         max = num;
     }
+    
+    if (num < min) {
+        min = num;
+    }
 
 } while (num != 0); // Terminar el ciclo al ingresar un 0
 
 console.log(`El número máximo ingresado fue: ${max}`);
+console.log(`El número mínimo ingresado fue: ${min}`);
 
 
 // se usa el "do-while" para arrancar, el "if" para actualizar el número más grande y el "while" para seguir pidiendo números hasta que no haya más.
