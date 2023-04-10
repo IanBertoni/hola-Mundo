@@ -16,5 +16,5 @@ if (posicion === '1') {
   console.log('Medalla de bronce');
 } else {
   // Si la posición es distinta de 1, 2 o 3, entregar certificado de participación
-  console.log('Certificado de participación');
+  console.log(`Certificado de participación por llegar en la posicion n° ${posicion}`);
 }
