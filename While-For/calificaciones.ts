@@ -33,8 +33,8 @@ do {
     
     notaFinal = notaPractica * 0.1 + notaProblemas * 0.5 + notaTeorica * 0.4;
     
-    console.log(`${nombre} ha obtenido una nota final de ${notaFinal.toFixed(2)}`);
+    console.log(`${nombre} ha obtenido una nota final de ${notaFinal}`);
   }
-} while (nombre != ""){
-    console.log("Hasta luego");
+  } while (nombre != ""){
+    console.log("nos vimos");
 };
