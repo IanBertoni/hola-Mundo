@@ -172,7 +172,8 @@ while(numero < 1000){
 } 
 document.write("Fin")
 ---------------------------------------------------------------------------------------------------------------------------------------
-En este caso while se ejecutaba en tanto numero sea menor que 1000, pero agregamos un condicional que hacia que si numero era igual a 10, salia del bucle con un break.
+En este caso while se ejecutaba en tanto numero sea menor que 1000, pero en este caso
+agregamos un condicional que hacia que si numero era igual a 10, salia del bucle con un break.
 ---------------------------------------------------------------------------------------------------------------------------------------
 Dentro de cualquier bucle, con un "break" salimos del mismo.
 ---------------------------------------------------------------------------------------------------------------------------------------
