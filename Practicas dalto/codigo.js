@@ -332,12 +332,9 @@ leon.verInfo();
 ------------Otros conceptos de la programacion orientada a objetos:   --------------------------------------------
 
 
-   Herencia: Es como cuando un objeto especializado hereda características de otro objeto más general. Por ejemplo, un "Perro" hereda características de un "Animal". Así, podemos reutilizar y ampliar el código existente.
+  1 Herencia: Es como cuando un objeto especializado hereda características de otro objeto más general. Por ejemplo, un "Perro" hereda características de un "Animal". Así, podemos reutilizar y ampliar el código existente.
 
-    Métodos estáticos: Son funciones especiales que puedes usar sin necesidad de crear un objeto. Son útiles para hacer operaciones que no dependen de un objeto en particular. Puedes pensar en ellos como acciones independientes. Por ejemplo, una "Calculadora" puede tener un método estático "sumar" que puedes usar directamente sin crear una calculadora.
-
-    Métodos de acceso (Getters, Setters): Son formas de obtener y modificar información de un objeto. Los getters te permiten obtener el valor de algo, como obtener el nombre de una persona. Los setters te permiten cambiar o asignar un nuevo valor, como cambiar el nombre de una persona. Son útiles para mantener el control y la seguridad de los datos de un objeto.
-
+Herencia:
 
 class Animal {
   constructor(especie, nombre, edad, color, sexo) {
@@ -372,9 +369,7 @@ const leon = new Animal("leon", "Leonidas", 293, "verde", "macho");
 perro.verInfo();
 gato.verInfo();
 leon.verInfo();
-
-
-*/
+-----------------------------------------------------------------------------------------------------------------------
 
 class Animal {
   constructor(especie, nombre, edad, color, sexo) {
@@ -407,3 +402,146 @@ const leon = new Animal("leon", "Leonidas", 293, "verde", "macho");
 
 perro.ladrar(); // "Woof"
 gato.ladrar(); // gato.ladrar() its not a function.
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+ 2 Métodos estáticos: Son funciones especiales que puedes usar sin necesidad de crear un objeto. Son útiles para hacer operaciones que no dependen de un objeto en particular. Puedes pensar en ellos como acciones independientes. Por ejemplo, una "Calculadora" puede tener un método estático "sumar" que puedes usar directamente sin crear una calculadora.
+
+
+class Perro extends Animal {
+  constructor(especie, edad, color, raza) {
+    super(especie, edad,color);
+    this.raza = raza;
+  }
+  static ladrar() {//se usa para crear funciones que están relacionadas con una clase en lugar de estar relacionadas con objetos específicos de esa clase. Estas funciones se pueden llamar directamente desde la clase sin necesidad de crear un objeto. Son prácticas cuando necesitas realizar una tarea sin tener que lidiar con objetos individuales.
+    alert("Woof");
+  }
+}
+
+
+Perro.ladrar(); // Sin el metodo static, no se duvuelve la alerta "Woof"
+
+-----------------------------------------------------------------------------------------------------------
+  3 
+   Métodos de acceso (Getters, Setters): Son formas de obtener y modificar información de un objeto. Los getters te permiten obtener el valor de algo, como obtener el nombre de una persona. Los setters te permiten cambiar o asignar un nuevo valor, como cambiar el nombre de una persona. Son útiles para mantener el control y la seguridad de los datos de un objeto.
+
+
+class Perro extends Animal {
+  constructor(especie, edad, color, raza) {
+    super(especie, edad,color);
+    this.raza = null;
+  } 
+  set setRaza(newName){ //Con set modificamos el valor
+      this.raza = newName;
+  } 
+  getRaza(){ //con el get obtenemos un valor 
+    return this.raza;
+  }
+
+
+  perro.modificarRaza = "licha";
+
+  document.write(perro.getRaza); // esto da como resultado licha
+
+
+  -------------------------------------------------------------------------------------------------------------------
+  Metodos de cadena: 
+
+
+
+concat(): Combina dos o más cadenas y devuelve una nueva cadena resultante.
+// Método concat()
+var str1 = "Hola";
+var str2 = "mundo";
+var concatenada = str1.concat(" ", str2);
+console.log(concatenada); // Salida: "Hola mundo"
+
+startswith(): Verifica si una cadena comienza con un prefijo especificado.
+// Método startsWith()
+var texto = "Hola mundo";
+console.log(texto.startsWith("Hola")); // Salida: true
+
+endswith(): Verifica si una cadena termina con un sufijo especificado.
+// Método endsWith()
+var texto = "Hola mundo";
+console.log(texto.endsWith("mundo")); // Salida: true
+
+includes(): Verifica si una cadena contiene una subcadena específica.
+// Método includes()
+var texto = "Hola mundo";
+console.log(texto.includes("mundo")); // Salida: true
+
+indexof(): Devuelve la posición de la primera aparición de una subcadena.
+// Método indexOf()
+var texto = "Hola mundo";
+console.log(texto.indexOf("mundo")); // Salida: 5
+
+lastindexof(): Devuelve la posición de la última aparición de una subcadena.
+// Método lastIndexOf()
+var texto = "Hola mundo, hola";
+console.log(texto.lastIndexOf("hola")); // Salida: 13
+
+padstart(): Agrega caracteres al inicio de una cadena hasta alcanzar una longitud determinada.
+// Método padStart()
+var numero = "42";
+console.log(numero.padStart(5, "0")); // Salida: "00042"
+
+padend(): Agrega caracteres al final de una cadena hasta alcanzar una longitud determinada.
+// Método padEnd()
+var numero = "42";
+console.log(numero.padEnd(5, "0")); // Salida: "42000"
+
+repeat(): Repite una cadena un número determinado de veces.
+// Método repeat()
+var texto = "Hola ";
+console.log(texto.repeat(3)); // Salida: "Hola Hola Hola "
+
+split(): Divide una cadena en un arreglo de subcadenas.
+// Método split()
+var texto = "Hola mundo";
+console.log(texto.split(" ")); // Salida: ["Hola", "mundo"]
+
+substring(): te permite obtener una parte específica de una cadena por el índice.
+El primer numero se incluye, y el segundo se excluye.
+// Método substring()
+var texto = "Hola a todos";
+console.log(texto.substring(2, 6)); // Salida: "la a"
+
+tolowercase(): Convierte una cadena a minúsculas.
+// Método toLowerCase()
+var texto = "Hola Mundo";
+console.log(texto.toLowerCase()); // Salida: "hola mundo"
+
+touppercase(): Convierte una cadena a mayúsculas.
+// Método toUpperCase()
+var texto = "Hola Mundo";
+console.log(texto.toUpperCase()); // Salida: "HOLA MUNDO"
+
+tostring(): Convierte un valor a una cadena de texto.
+// Método toString()
+var numero = 42;
+console.log(numero.toString()); // Salida: "42"
+
+trim(): Elimina los espacios en blanco al inicio y al final de una cadena.
+// Método trim()
+var texto = "   Hola mundo   ";
+console.log(texto.trim()); // Salida: "Hola mundo"
+
+trimEnd(): Elimina los espacios en blanco al final de una cadena.
+
+// Método trimEnd()
+var texto = "   Hola mundo   ";
+console.log(texto.trimEnd()); // Salida: "   Hola mundo"
+
+trimstart(): Elimina los espacios en blanco al inicio de una cadena.
+// Método trimStart()
+var texto = "   Hola mundo   ";
+console.log(texto.trimStart()); // Salida: "Hola mundo"
+
+valueof(): Devuelve el valor primitivo de un objeto.
+  // Método valueOf()
+var numberObject = new Number(42);
+console.log(numberObject.valueOf()); // Salida: 42
+
+*/
