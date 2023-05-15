@@ -543,5 +543,126 @@ valueof(): Devuelve el valor primitivo de un objeto.
   // Método valueOf()
 var numberObject = new Number(42);
 console.log(numberObject.valueOf()); // Salida: 42
+--------------------------------------------------------------------------------------------------------------------
+Metodos de array:son las herramientas que te permiten realizar diferentes operaciones y manipulaciones con una serie de datos almacenados en arreglos. Estos métodos simplifican tareas en un arreglo, facilitando el trabajo con datos estructurados.
+----------------------------------------------------------------------------------------------------------------------
+Los métodos de array transformadores en JavaScript realizan operaciones que modifican los elementos de un array original, como agregar, eliminar, reemplazar o transformar los valores del array.
+
+// Método pop(): Elimina el último elemento de un arreglo y lo devuelve.
+var numbers = [1, 2, 3, 4, 5];
+var lastElement = numbers.pop();
+console.log(numbers); // [1, 2, 3, 4]
+console.log(lastElement); // 5
+
+// Método shift(): Elimina el primer elemento de un arreglo y lo devuelve.
+var numbers = [1, 2, 3, 4, 5];
+var firstElement = numbers.shift();
+console.log(numbers); // [2, 3, 4, 5]
+console.log(firstElement); // 1
+
+// Método push(): Agrega uno o más elementos al final de un arreglo y devuelve la nueva longitud del arreglo.
+var fruits = ["apple", "banana", "orange"];
+var newLength = fruits.push("kiwi", "mango");
+console.log(fruits); // ["apple", "banana", "orange", "kiwi", "mango"]
+console.log(newLength); // 5
+
+// Método reverse(): Invierte el orden de los elementos en un arreglo.
+var numbers = [1, 2, 3, 4, 5];
+numbers.reverse();
+console.log(numbers); // [5, 4, 3, 2, 1]
+
+// Método unshift(): Agrega uno o más elementos al inicio del arreglo y devuelve la nueva longitud del arreglo.
+var fruits = ["banana", "orange", "kiwi"];
+var newLength = fruits.unshift("apple", "mango");
+console.log(fruits); // ["apple", "mango", "banana", "orange", "kiwi"]
+console.log(newLength); // 5
+
+// Método sort(): Ordena los elementos de un arreglo alfabéticamente o numéricamente.
+var fruits = ["banana", "orange", "apple", "mango"];
+fruits.sort();
+console.log(fruits); // ["apple", "banana", "mango", "orange"]
+
+// Método splice(): Cambia el contenido de un arreglo eliminando, reemplazando o agregando elementos.
+var numbers = [1, 2, 3, 4, 5];
+var removedElements = numbers.splice(1, 2, 6, 7);
+console.log(numbers); // [1, 6, 7, 4, 5]
+console.log(removedElements); // [2, 3]
+--------------------------------------------------------------------------------------------------------------
+Los métodos de acceso en JavaScript son funciones que nos permiten obtener información de los elementos de una lista sin modificar la lista original. Esto nos ayudan a buscar elementos, filtrarlos, verificar la existencia de un valor y obtener información básica sobre la lista, como su longitud.
+
+// Método join(): Une todos los elementos de un arreglo en una cadena, utilizando un separador opcional.
+var fruits = ["apple", "banana", "orange"];
+var result = fruits.join(", ");
+console.log(result); // "apple, banana, orange"
+
+// Método slice(): Sirve para copiar un pedazo de array, y pegarlo en uno nuevo, usa 2 indices.
+el primero es incluyente, pero el segundo no.
+var numbers = [1, 2, 3, 4, 5];
+var slicedArray = numbers.slice(2, 4);
+console.log(slicedArray); // [3, 4];
+--------------------------------------------------------------------------------------------------------------------------
+Los métodos de repetición de array son funciones que nos permiten realizar acciones repetitivas en los elementos de un array, como recorrer cada elemento, ejecutar una operación en cada uno, verificar condiciones o encontrar el primer elemento que cumpla una condición. 
+
+// Método filter(): Crea un nuevo arreglo con todos los elementos que cumplan con una condición especificada.
+var numbers = [1, 2, 3, 4, 5];
+var filteredArray = numbers.filter(function (element) {
+  return element > 2;
+});
+console.log(filteredArray); // [3, 4, 5]
+
+// Método forEach(): Ejecuta una función para cada elemento de un arreglo.
+var numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function (element) {
+  console.log(element);
+});
+
+// Resultado:
+// 1
+// 2
+// 3
+// 4
+// 5
+--------------------------------------------------------------------------------------------------------------------------
+El objeto Math en JavaScript proporciona funciones y valores matemáticos predefinidos.
+
+// Método sqrt(): Calcula la raíz cuadrada de un número.
+const sqrtResult = Math.sqrt(9);
+console.log(sqrtResult); // Output: 3
+
+// Método cbrt(): Calcula la raíz cúbica de un número.
+const cbrtResult = Math.cbrt(8);
+console.log(cbrtResult); // Output: 2
+
+// Método max(): Devuelve el número máximo de una lista de valores.
+const maxResult = Math.max(2, 5, 1, 8, 3);
+console.log(maxResult); // Output: 8
+
+// Método min(): Devuelve el número mínimo de una lista de valores.
+const minResult = Math.min(2, 5, 1, 8, 3);
+console.log(minResult); // Output: 1
+
+// Método random(): Genera un número aleatorio entre 0 y 1.
+const randomResult = Math.random();
+console.log(randomResult); // Output: Un número aleatorio entre 0 y 1
+
+// Método round(): Redondea un número al entero más cercano.
+const roundResult = Math.round(3.7);
+console.log(roundResult); // Output: 4
+
+// Método ceil(): Redondea un número al entero más grande más cercano.
+const ceilResult = Math.ceil(3.2);
+console.log(ceilResult); // Output: 4
+
+// Método fround(): Devuelve la representación flotante de precisión simple más cercana de un número.
+const froundResult = Math.fround(3.14);
+console.log(froundResult); // Output: 3.140000104904175
+
+// Método floor(): Redondea un número al entero más pequeño.
+const floorResult = Math.floor(5.8);
+console.log(floorResult); // Output: 5
+
+// Método trunc(): Devuelve la parte entera de un número eliminando los decimales.
+const truncResult = Math.trunc(4.9);
+console.log(truncResult); // Output: 4
 
 */
