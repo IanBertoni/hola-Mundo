@@ -1,0 +1,47 @@
+
+body{ 
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el cuerpo */
+    background-position: center; /* Ajusta la posición de la imagen de fondo en el centro */
+    background-image: url(./fondo.jpg);
+    color: #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+h1{
+ padding-right: 0%;
+}
+h1 img{
+  height: 60px;
+}
+  nav{
+    position: fixed; /* Fija el nav en una posición específica */
+    top: 0; /* Coloca el nav en la parte superior de la página */
+    width: 100%; /* Establece el ancho del nav al 100% del ancho de la página */
+
+  }
+  .navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+  }
+  
+  .navigation li {
+    margin-right: 20px;
+    font-size: 22px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  h2, ul li, footer {
+    text-shadow: 1px -1px 1px rgba(0, 0, 0, 1); /* Agrega una sombra al texto */
+    -webkit-text-stroke: 1px #efefef; /* Agrega un contorno al texto */
+    list-style-type:none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10;
+    background-color: transparent; 
+  }
