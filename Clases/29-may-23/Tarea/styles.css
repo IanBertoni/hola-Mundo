@@ -1,0 +1,106 @@
+#encabezado {
+  width: 94.4%;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: grey;
+  position: relative;
+  margin-left: 20px;
+}
+
+#logo {
+  width: 150px;
+  height: 25px;
+  background-color: darkblue;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
+
+#menu1 {
+  width: 100px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+#menu2 {
+  width: 180px;
+  height: 20px;
+  background-color: darkred;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin: 5px;
+}
+
+#encabezado p {
+  margin: 20px;
+  color: white;
+}
+
+.contenido {
+  width: 30%;
+  height: 350px;
+  margin-right:5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  justify-content:space-evenly;
+  background-color: #eee;
+  display:inline-flex;
+}
+
+#contenido1{
+  background-color: darkgrey;
+}
+#contenido2{
+  background-color: aqua;
+}
+#contenido3{
+  background: darkgoldenrod;
+}
+
+#contenedor {
+  display: flex;
+}
+
+.lateral {
+  width: 62%;
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: #002d0a;
+  color: white;
+}
+
+#lateralUno {
+  width: 30%;
+  height: 400px;
+  background-color: brown;
+}
+
+#footer {
+  width: 94.3%;
+  height: 100px;
+  background-color:aquamarine;
+  margin-left: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#elemento {
+  width: 100px;
+  height: 20px;
+  background-color: #040142;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px; 
+  margin-right: 20px; 
+  color:white;
+  padding: 10px;
+}
