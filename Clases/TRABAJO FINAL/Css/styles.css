@@ -2,29 +2,40 @@ body{
     background-color:rgb(176, 0, 32);
 }
 header {
-    margin-top: -20px;
+    margin-left: -20px;
+    margin-top: -40px;
+    margin-right: -20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 250px;
+    height: 300px;
     padding: 0 20px;
-    background-color:rgb(0, 33, 71);
+    background-color:rgb(0, 0, 0) !important;
+    background: url("/Logo/pxfuel.jpg") no-repeat center center;
+    background-size:contain;
+    background-position: center 20px;
 }
 
 header img {
-    max-width: 200px;
+    max-width: 100px;
     max-height: 100%;
+    margin: 25px 25px;
 }
 
 #myNav {
     display: flex;
     justify-content: center;
+    padding: 0px auto;
 }
 
 #myNav li {
     list-style-type: none;
     margin-right: 10px;
 }
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 0, 1);
+  }
 
 section {
     display: flex;
@@ -64,15 +75,42 @@ section {
     opacity: 0;
     transition: opacity 0.3s ease;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
 }
 
 .image-container:hover .overlay {
     opacity: 1;
+    background-color: rgba(76, 0, 255, 0.5);
+    cursor: crosshair;
 }
 
 footer a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgba(255, 255, 0, 1);
+}
+
+.image-container:nth-child(1) .overlay {
+    background-color: rgba(0, 208, 98, 0.7); /* Green Lantern */
+  }
+  
+  .image-container:nth-child(2) .overlay {
+    background-color: rgba(255, 66, 0, 0.7); /* Flash */
+  }
+  
+  .image-container:nth-child(3) .overlay {
+    background-color: rgba(0, 48, 255, 0.7); /* Superman */
+  }
+  
+  .image-container:nth-child(4) .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Batman */
+  }
+  
+  .image-container:nth-child(5) .overlay {
+    background-color: rgba(255, 0, 255, 0.7); /* Wonder Woman */
+  }
+
+.overlay:last-child{
+    text-align: center;
 }
