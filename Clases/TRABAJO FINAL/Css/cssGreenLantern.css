@@ -9,6 +9,19 @@ h1 {
   font-size: 2.5vw;
   margin: 0;
   color: #000000;
+  display: inline-block;
+}
+
+h1:hover{
+  color: rgb(98, 255, 0);
+ 
+}
+
+.logoizq{
+  width: 5%;
+  position: absolute;
+  right:94%;
+  top:1%;
 }
 
 .logo {
@@ -83,9 +96,9 @@ main {
 }
 
 .text-container p {
-  margin-bottom: 1px;
-  font-size: 14px;
-  line-height: 1.8;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .fichaTecnica {
