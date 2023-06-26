@@ -1,7 +1,5 @@
-var gif = document.getElementById("flashGif");
+var gif = document.querySelector(".flash-gif");
 
-function toggleAnimation() {
+gif.addEventListener("click", function () {
   gif.classList.toggle("animation-active");
-}
-
-gif.addEventListener("click", toggleAnimation);
+});

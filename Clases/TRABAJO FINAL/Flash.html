@@ -2,33 +2,32 @@
 <html>
 <head>
   <title>The Flash - Velocista escarlata</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="./Css/cssFlash.css">
   <link rel="shortcut icon" href="./Logo/flash logo.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./Javascript/theFlash.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-        <header>
-            <h1>The Flash</h1>
-            <img src="./heroes/Flash/flash gif.gif" alt="The Flash" class="flash-gif flash-logo">
+<header>
+  <h1>The Flash</h1>
+  <img src="./heroes/Flash/flash gif.gif" alt="The Flash" class="flash-gif flash-logo">
 
-    <ul class="nav" id="myNav">
-      <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html" target="_blank">Home</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="https://shop.dc.com/coming-soon/">Tienda</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#footer">Como encontrarnos?</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.instagram.com/ianbertoni/" target="_blank">Quienes somos?</a>
-      </li>
-    </ul>
-  </header>
-  <main>
+  <ul class="nav" id="myNav">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./index.html" target="_blank">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://shop.dc.com/coming-soon/">Tienda</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#footer">Como encontrarnos?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.instagram.com/ianbertoni/" target="_blank">Quienes somos?</a>
+    </li>
+  </ul>
+</header>
+
+<main>
     <div class="container">
       <div class="image-container">
 
@@ -55,16 +54,39 @@
             <p>Además de su asombrosa velocidad, The Flash posee la capacidad de manipular el tiempo, lo que le permite viajar al pasado o al futuro para corregir errores y evitar catástrofes. Su inteligencia y conocimiento científico le otorgan una ventaja adicional en la lucha contra el crimen, ya que utiliza su velocidad para analizar evidencia y resolver casos en tiempo récord.</p>
             <p>The Flash se ha convertido en un símbolo de esperanza y valentía para Central City y el mundo entero. Su dedicación desinteresada para proteger a los inocentes lo ha convertido en un héroe admirado y respetado. Cuando su característico rayo rojo atraviesa los cielos, todos saben que el día está a salvo y que la justicia prevalecerá.</p>
           </div>
-          <div class="slider-container">
-            <img class="slider-item" src="./heroes/Flash/Flash 1.jpg" />
-            <img class="slider-item" src="./heroes/Flash/Flash 2.jpg" />
-            <img class="slider-item" src="./heroes/Flash/Flash 3.jpg" />
-            <img class="slider-item" src="./heroes/Flash/Flash 4.jpg" />
-            <img class="slider-item" src="./heroes/Flash/Flash 5.jpg" />
-          </div>
-          
-        
 
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./heroes/Flash/Flash 1.jpg" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./heroes/Flash/Flash 2.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./heroes/Flash/Flash 3.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./heroes/Flash/Flash 4.jpg" class="d-block w-100" alt="Slide 4">
+              </div>
+              <div class="carousel-item">
+                <img src="./heroes/Flash/Flash 5.jpg" class="d-block w-100" alt="Slide 5">
+              </div>
+              <div class="carousel-item">
+                <video class="d-block w-100" controls>
+                  <source src="./heroes/Flash/InkedStudio_Project_V1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <div class="fichaTecnica">
             <h2>Ficha Técnica</h2>
             <div class="ficha-row">
@@ -93,10 +115,11 @@
           </div>
         </div>
       </div>
-  </main>
-  
-  <script src="./Javascript/theFlash.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <footer id="footer"><a href="https://www.google.com/maps/place/Cincinnati+Museum+Center/@39.1099317,-84.5394638,17z/data=!3m1!4b1!4m6!3m5!1s0x8841b41dff3894b9:0x48d3f82fc5d002d9!8m2!3d39.1099317!4d-84.5372751!16s%2Fm%2F09rvbq6?entry=ttu" target='_blank'>1301 Western Ave, Cincinnati, EE. UU.</a></footer>
-</body>
-</html>
+    </main>
+
+    <footer id="footer"><a href="https://www.google.com/maps/place/Cincinnati+Museum+Center/@39.1099317,-84.5394638,17z/data=!3m1!4b1!4m6!3m5!1s0x8841b41dff3894b9:0x48d3f82fc5d002d9!8m2!3d39.1099317!4d-84.5372751!16s%2Fm%2F09rvbq6?entry=ttu" target='_blank'>1301 Western Ave, Cincinnati, EE. UU.</a></footer>
+    
+    <script src="./Javascript/theFlash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+    </html>

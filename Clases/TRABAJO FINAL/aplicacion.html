@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./Css/formulario.css">
+<link rel="shortcut icon" href="./Logo/teen titans.png" />
+<title>Teen Titans</title>
+</head>
+<body>
+<form id="myForm">
+  <div class="container">
+    <h1>Registro de Nuevos Superhéroes</h1>
+    <hr>
+    <label>Nombre:</label>
+    <input type="text" name="nombre" placeholder="Nombre" size="15" required />
+    <label>Alias:</label>
+    <input type="text" name="alias" placeholder="Alias" size="15" required />
+    <div>
+      <label>Género:</label><br>
+      <input type="radio" name="genero" value="hombre" /> Hombre
+      <input type="radio" name="genero" value="mujer" /> Mujer
+      <input type="radio" name="genero" value="otro" /> Otro
+    </div>
+    <label>Poderes:</label><br>
+    <input type="checkbox" name="poderes[]" value="superfuerza" /> Superfuerza
+    <input type="checkbox" name="poderes[]" value="vuelo" /> Vuelo
+    <input type="checkbox" name="poderes[]" value="invulnerabilidad" /> Invulnerabilidad
+    <input type="checkbox" name="poderes[]" value="visión-rayosX" /> Visión de rayos X
+    <input type="checkbox" name="poderes[]" value="velocidad" /> Velocidad sobrehumana
+    <input type="checkbox" name="poderes[]" value="control-elemental" /> Control elemental
+    <br>
+    <label>Teléfono:</label>
+    <input type="text" name="telefono" placeholder="Teléfono" size="10" required />
+    <label>Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+    <label>Motivación para unirse:</label><br>
+    <textarea id="motivacion" cols="80" rows="5" placeholder="Motivación para unirse" required></textarea>
+   
+    <input type="submit" value="Enviar" class="registerbtn" />
+  
+  </div>
+</form>
+
+<script src="./Javascript/inscripcion.js"></script>
+</body>
+</html>
