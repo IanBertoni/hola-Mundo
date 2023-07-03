@@ -173,8 +173,9 @@
   }
   
   .superman-gif {
-    width: 10%;
+    width: 8%;
     position: absolute;
-    right: 85%;
-    top: -1%;
+    right: 90%;
+    top:0;
+
   }
