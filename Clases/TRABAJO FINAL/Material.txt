@@ -1,0 +1,19 @@
+Flip card: 
+https://www.youtube.com/watch?v=WdXb5mUEtdQ
+
+Span, pseudo clases,css :
+https://www.freecodecamp.org/learn/2022/responsive-web-design/
+https://www.cssportal.com/
+https://cssgradient.io/
+
+
+Javascript audio + ChatGPT:
+https://www.w3schools.com/jsref/met_audio_play.asp
+
+Degrade de colores:
+https://cssgradient.io/
+https://www.w3schools.com/colors/colors_picker.asp
+
+rainbow effect:
+https://codepen.io/zak/pen/rWJzPy
+
