@@ -6,5 +6,15 @@
   },
   "devDependencies": {
     "@types/readline-sync": "^1.4.4"
-  }
+  },
+  "name": "hola-mundo",
+  "description": "Repositorio donde subo las tareas, y donde subo todo lo que voy practicando de otras guias que voy leyendo y haciendo a traves de internet  de manera autodidacta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

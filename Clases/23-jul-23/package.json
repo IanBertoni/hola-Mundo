@@ -1,0 +1,16 @@
+{
+  "name": "23-jul-23",
+  "version": "1.0.0",
+  "description": "calculadora de propina",
+  "main": "Tarea.js",
+  "scripts": {
+    "inicio": "ts-node Tarea.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
