@@ -35,7 +35,7 @@ cambiarCanal(canal: number): void{
 ajustarVolumen(volumen: number): void{
     if(this.encendido === true){
         volumen = rls.questionInt("Ingrese el volumen deseado: ")
-        if (volumen >= 1 && volumen <= 100){
+        if (volumen >= 0 && volumen <= 100){
              this.volumen = volumen 
         }
     } else {
