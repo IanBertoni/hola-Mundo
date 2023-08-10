@@ -59,6 +59,7 @@ infoTv(): void{
 
 const miTelevisor = new Televisor();
 miTelevisor.prender();
-miTelevisor.cambiarCanal(5);
-miTelevisor.ajustarVolumen(65);
+miTelevisor.cambiarCanal(1);
+miTelevisor.ajustarVolumen(50);
 miTelevisor.infoTv();
+miTelevisor.apagar()
