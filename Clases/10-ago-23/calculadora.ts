@@ -25,7 +25,7 @@ class Calculadora {
             this.resultado = a / b;
             return this.resultado;
         } else {
-           return 999999999999999;
+           return 99999999999999;
            
         }
     }
