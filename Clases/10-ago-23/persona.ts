@@ -1,16 +1,23 @@
-import * as rls from "readline-sync"
+import * as rls from "readline-sync";
+
 class Person {
     private name: string;
-    private age: number;
+    private año: number;
 
     constructor() {
         this.name = rls.question("Ingrese su nombre: ");
-        this.age = rls.questionInt("Ingrese su edad: ");
+        this.año = rls.questionInt("Ingrese su año de nacimiento: ");
+    }
+
+    getAge() {
+        const currentYear = new Date().getFullYear();
+        const age = currentYear - this.año;
+        return age;
     }
 
     getInfo() {
         console.log(`Nombre: ${this.name}`);
-        console.log(`Edad: ${this.age}`);
+        console.log(`Edad: ${this.getAge()} años`);
     }
 }
 
