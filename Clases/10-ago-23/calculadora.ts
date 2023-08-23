@@ -20,12 +20,12 @@ class Calculadora {
         return this.resultado;
     }
 
-    dividir(a: number, b: number): number {
+    dividir(a: number, b: number): number | string {
         if (a !== 0 && b !== 0) {
             this.resultado = a / b;
             return this.resultado;
         } else {
-           return 99999999999999;
+           return "no se puede dividir por 0";
            
         }
     }

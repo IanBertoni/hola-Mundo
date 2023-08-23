@@ -23,7 +23,7 @@ apagar(): void{
     console.log("Apagando");
 }
 cambiarCanal(canal: number): void{
-    if(this.encendido === true){
+    if(this.encendido){
      canal = rls.questionInt("Ingrese un canal entre el 1 y el 100: ")
      if (canal >= 1 && canal <= 100){
         this.canalActual = canal 
@@ -33,7 +33,7 @@ cambiarCanal(canal: number): void{
     }
 }
 ajustarVolumen(volumen: number): void{
-    if(this.encendido === true){
+    if(this.encendido){
         volumen = rls.questionInt("Ingrese el volumen deseado: ")
         if (volumen >= 0 && volumen <= 100){
              this.volumen = volumen 
@@ -44,7 +44,7 @@ ajustarVolumen(volumen: number): void{
 }
 
 infoTv(): void{ 
-    if(this.encendido === true){
+    if(this.encendido){
         console.log(`Canal actual: ${this.canalActual}`);
         console.log(`Volumen actual: ${this.volumen}`);
         const horaActual = new Date().toLocaleTimeString();
