@@ -8,7 +8,7 @@ class BankAccount {
     constructor(){
         this.owner = rls.question("Nombre del dueño: ");
         this.balance = 0;
-        this.accountType = "Default";
+        this.accountType = "Especifique que cuenta va a usar";
         
     }
 
