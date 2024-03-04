@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define el tipo de documento y el idioma -->
+    <meta charset="UTF-8" />
+    <!-- Establece el tamaño de la ventana para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <h1 id="titulo">Manejo DOM con JS</h1>
+    <!-- Botón para llamar a la función mostrar -->
+    <button onclick="mostrar()">mostrar</button>
+
+    <br />
+
+    <!-- Imagen inicial -->
+    <img
+      id="imagen"
+      src="/Primer cuatrimestre/TRABAJO FINAL/heroes/batman.png"
+    />
+
+    <!-- Script de JavaScript -->
+    <script>
+      // Función que cambia la imagen cuando se hace clic en el botón
+      function mostrar() {
+        // Selecciona el elemento de imagen por su ID y cambia su atributo src
+        document.getElementById("imagen").src =
+          "/Primer cuatrimestre/TRABAJO FINAL/heroes/flash.png";
+      }
+    </script>
+  </body>
+</html>

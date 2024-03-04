@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define el tipo de documento y el idioma -->
+    <meta charset="UTF-8" />
+    <!-- Establece el tamaño de la ventana para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <h1 onclick="cambiarTexto(this)">Manejo DOM</h1>
+
+    <!-- Script de JavaScript -->
+    <script>
+      // Función que cambia el texto del elemento que llama la función
+      function cambiarTexto(elemento) {
+        // Cambia el contenido HTML del elemento que ha sido clicado
+        elemento.innerHTML = "Cambiando el título";
+        console.log(elemento);
+      }
+    </script>
+  </body>
+</html>

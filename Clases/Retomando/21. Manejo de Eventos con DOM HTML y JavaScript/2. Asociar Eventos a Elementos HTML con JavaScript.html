@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <h1 id="titulo">Manejo DOM</h1>
+
+    <!-- Div para mostrar el nuevo contenido -->
+    <div id="mostrar"></div>
+
+    <!-- Script de JavaScript -->
+    <script>
+      // Cuando se hace clic en el elemento con ID "titulo", se llama a la función cambiarTexto
+      document.getElementById("titulo").onclick = cambiarTexto;
+
+      // Definición de la función cambiarTexto
+      function cambiarTexto() {
+        // Cambia el contenido HTML del elemento con ID "mostrar" para mostrar "Nuevo Contenido"
+        document.getElementById("mostrar").innerHTML = "Nuevo Contenido";
+      }
+    </script>
+  </body>
+</html>

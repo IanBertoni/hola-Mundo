@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo formulario con JavaScript</title>
+  </head>
+  <body>
+    <!-- Sección del formulario -->
+    <form id="formulario">
+      Nombre: <input type="text" name="nombre" value="juan" />
+      <!-- Campo de entrada para el nombre con valor predeterminado "juan" -->
+      <br />
+      Apellido: <input type="text" name="apellido" value="Perez" />
+      <!-- Campo de entrada para el apellido con valor predeterminado "Perez" -->
+      <br />
+    </form>
+    <!-- Botón para mostrar los valores del formulario -->
+    <button onclick="mostrarValores()">Mostrar</button>
+    <!-- Contenedor para mostrar los valores del formulario -->
+    <div id="valores"></div>
+    <!-- Script de JavaScript -->
+    <script>
+      // Función para mostrar los valores del formulario
+      function mostrarValores() {
+        // Selecciona el formulario por su ID
+        let formulario = document.forms["formulario"];
+        // Variable para almacenar el texto de los valores del formulario
+        let texto = "";
+        // Itera sobre los elementos del formulario
+        for (let elemento of formulario) {
+          // Agrega el valor del elemento al texto con un salto de línea
+          texto += elemento.value + "<br/>";
+        }
+        // Actualiza el contenido del div "valores" con el texto generado
+        document.getElementById("valores").innerHTML = texto;
+      }
+    </script>
+  </body>
+</html>

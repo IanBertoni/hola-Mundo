@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo DOM con JavaScript</title>
+  </head>
+  <body>
+    <h1 id="header">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo">Saludos!</p>
+
+    <p id="parrafo2"></p>
+    <script>
+      //con document.getElementById se obtiene toda la linea(<h1 id="header">Ejemplo DOM con JavaScript</h1>), no el contenido
+      //por eso despues de acceder al elemento, usamos innerHTML para que nos muestre la informacion.
+      let header = document.getElementById("header").innerHTML;
+      console.log(`valor de header: ${header}`);
+
+      let parrafo = document.getElementById("parrafo").innerHTML;
+      console.log(`valor de parrafo: ${parrafo}`);
+      // asi se reemplaza el contenido por variable.
+      parrafo.innerHTML = "Nuevo valor de parrafo";
+      header.innerHTML = "Nuevo valor del header";
+    </script>
+  </body>
+</html>
