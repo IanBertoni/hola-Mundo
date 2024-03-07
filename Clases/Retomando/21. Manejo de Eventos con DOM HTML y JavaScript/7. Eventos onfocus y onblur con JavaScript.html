@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <h1 id="titulo">Manejo DOM</h1>
+    <br />
+
+    Nombre: <input type="text" onfocus="cambiar(this)" onblur="volver(this)" />
+    <!-- El evento onfocus se activa cuando el campo obtiene el foco -->
+    <!-- El evento onblur se activa cuando el campo pierde el foco -->
+
+    <br />
+    <br />
+    Apellido:
+    <input type="text" onfocus="cambiar(this)" onblur="volver(this)" />
+
+    <script>
+      function cambiar(elementoInput) {
+        // Función para cambiar el color de fondo del elemento al amarillo cuando obtiene el foco
+        elementoInput.style.background = "yellow";
+      }
+
+      function volver(color) {
+        // Función para restaurar el color de fondo del elemento a blanco cuando pierde el foco
+        color.style.background = "white";
+      }
+    </script>
+  </body>
+</html>

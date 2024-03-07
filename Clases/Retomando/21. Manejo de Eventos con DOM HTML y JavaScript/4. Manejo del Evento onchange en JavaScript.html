@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <h1 id="titulo">Manejo DOM</h1>
+
+    <br />
+
+    <!-- Campo de entrada de texto -->
+    <!-- El atributo 'id' proporciona un identificador único para este elemento -->
+    <!-- El atributo 'onchange' especifica una acción a realizar cuando el contenido cambia -->
+    nombre: <input type="text" id="nombre" onchange="convertir(this)" />
+
+    <script>
+      // Definición de la función convertir
+      // Toma un parámetro 'nombreInput' que representa el elemento de entrada de texto
+      function convertir(nombreInput) {
+        // Convierte el valor del elemento de entrada a mayúsculas y lo asigna nuevamente al campo de entrada
+        nombreInput.value = nombreInput.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

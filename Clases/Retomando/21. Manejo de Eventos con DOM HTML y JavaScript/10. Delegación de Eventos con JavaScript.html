@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos y título del documento -->
+  </head>
+  <body>
+    <h1 id="titulo">Manejo DOM</h1>
+
+    <!-- Formulario con campos de entrada -->
+    <form id="forma">
+      <!-- Campo de entrada para el nombre -->
+      Nombre: <input type="text" id="nombre" /> <br /><br />
+      <!-- Campo de entrada para el apellido -->
+      Apellido:<input type="text" id="apellido" />
+    </form>
+
+    <script>
+      // Seleccionar el formulario por su ID
+      const forma = document.getElementById("forma");
+
+      // Agregar evento de enfoque al formulario para cambiar el color de fondo al rosa
+      forma.addEventListener(
+        "focus",
+        (evento) => {
+          // Obtener el elemento que activó el evento y cambiar su color de fondo a rosa
+          evento.target.style.background = "pink";
+        },
+        // Usar la fase de captura para asegurar que el evento se capture antes de la propagación (opcional)
+        true
+      );
+
+      // Agregar evento de desenfoque al formulario para restaurar el color de fondo
+      forma.addEventListener(
+        "blur",
+        (evento) => {
+          // Restaurar el color de fondo del elemento que activó el evento a su estado predeterminado
+          evento.target.style.background = "";
+        },
+        true //*
+      );
+    </script>
+  </body>
+</html>
+
+<!-- *Se agrega un evento de enfoque al formulario. El tercer parámetro se
+establece en 'true' para indicar que el evento se captura durante la fase de
+captura. Esto asegura que el evento se propague correctamente desde el
+formulario hacia sus elementos internos. -->

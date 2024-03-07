@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadatos y título del documento -->
+  </head>
+  <body>
+    <h1 id="titulo">Manejo DOM</h1>
+    <br />
+
+    Nombre: <input type="text" id="nombre" />
+
+    <br />
+    <br />
+    Apellido:
+    <input type="text" id="apellido" />
+
+    <script>
+      // Agregando un evento de escucha directamente con una función flecha
+      document.getElementById("nombre").addEventListener("focus", (evento) => {
+        // Cambia el color de fondo del elemento que activó el evento a rosa
+        evento.target.style.background = "pink";
+      });
+
+      // Agregando un evento de escucha directamente con una función flecha (anónima)
+      document.getElementById("nombre").addEventListener("blur", (evento) => {
+        // Cambia el color de fondo del elemento que activó el evento a blanco
+        evento.target.style.background = "white";
+      });
+
+      document.getElementById("apellido").addEventListener("focus", cambiar);
+
+      document.getElementById("apellido").addEventListener("blur", volver);
+
+      function cambiar(evento) {
+        let componente = evento.target;
+        componente.style.background = "blue";
+      }
+
+      // Definición de la función "volver"
+      function volver(e) {
+        // Obtiene el elemento que activó el evento
+        let componente2 = e.target;
+        // Cambia el color de fondo del elemento a blanco
+        componente2.style.background = "white";
+      }
+    </script>
+  </body>
+</html>

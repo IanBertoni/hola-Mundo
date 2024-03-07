@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body>
+    <!-- (this) hace referencia al objeto en el que se encuentra -->
+    <!-- aca por ejemplo hace referencia al <h1> -->
+    <!-- Cuando el ratón pasa sobre el título, se ejecuta la función 'rojo(this)' -->
+    <!-- Cuando el ratón sale del título, se ejecuta la función 'azul(this)' -->
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+      Manejo DOM
+    </h1>
+    <br />
+
+    <!-- Campo de entrada de texto -->
+    <!-- La función 'convertir(this)' se ejecuta cuando el contenido del campo cambia -->
+    nombre: <input type="text" id="nombre" onchange="convertir(this)" />
+
+    <script>
+      // Función que cambia el color del título a rojo cuando el ratón está sobre él
+      function rojo(titulo) {
+        titulo.style.color = "red";
+      }
+
+      // Función que cambia el color del título a azul cuando el ratón sale de él
+      function azul(titulo) {
+        titulo.style.color = "blue";
+      }
+    </script>
+  </body>
+</html>

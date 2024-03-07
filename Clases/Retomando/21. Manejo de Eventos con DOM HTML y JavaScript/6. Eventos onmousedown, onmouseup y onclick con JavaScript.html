@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+    <!-- Título de la página -->
+  </head>
+  <body>
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="azul(this)">
+      Manejo DOM
+    </h1>
+
+    <br />
+
+    nombre: <input type="text" id="nombre" onchange="convertir(this)" />
+
+    <!-- 
+      La siguiente es una serie de eventos adicionales que podemos manejar con JavaScript:
+      - onmousedown: se ejecuta cuando se presiona un botón del ratón mientras está sobre un elemento.
+      - onmouseup: se ejecuta cuando se suelta un botón del ratón mientras está sobre un elemento.
+      - onclick: se ejecuta cuando se hace clic en un elemento.
+    -->
+    <button
+      onmousedown="botonPresionado(this)"
+      onmouseup="botonSoltado(this)"
+      onclick="botonClic(this)"
+    >
+      Haz clic aquí
+    </button>
+
+    <script>
+      // Función que cambia el color del título a rojo cuando el ratón está sobre él
+      function rojo(titulo) {
+        titulo.style.color = "red";
+      }
+
+      // Función que cambia el color del título a azul cuando el ratón sale de él
+      function azul(titulo) {
+        titulo.style.color = "blue";
+      }
+
+      // Función que convierte el texto ingresado en el campo de entrada a mayúsculas
+      function convertir(nombreInput) {
+        nombreInput.value = nombreInput.value.toUpperCase();
+      }
+
+      // Función que cambia el color del botón cuando se presiona
+      function botonPresionado(boton) {
+        boton.style.background = "yellow";
+      }
+
+      // Función que cambia el color del botón cuando se suelta después de presionarlo
+      function botonSoltado(boton) {
+        boton.style.background = "green";
+      }
+
+      // Función que muestra un mensaje cuando se hace clic en el botón
+      function botonClic(boton) {
+        alert("¡Haz hecho clic en el botón!");
+      }
+    </script>
+  </body>
+</html>

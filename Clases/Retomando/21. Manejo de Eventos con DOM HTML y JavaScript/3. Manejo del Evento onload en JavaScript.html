@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejo DOM con JS</title>
+  </head>
+  <body onload="entrar()">
+    <h1 id="titulo">Manejo DOM</h1>
+
+    <!-- Div para mostrar el estado de las cookies -->
+    <div id="mostrar"></div>
+
+    <script>
+      // Asigna el evento onclick al elemento con ID "titulo" para llamar a la función cambiarTexto
+      document.getElementById("titulo").onclick = cambiarTexto;
+
+      // Función que se ejecuta al cargar la página
+      function entrar() {
+        // Muestra una alerta indicando que se ha entrado a la página web
+        alert("Entrando a la página web");
+
+        // Declara una variable para almacenar el estado de las cookies
+        let texto = "";
+
+        // Verifica si las cookies están habilitadas en el navegador
+        if (navigator.cookieEnabled) {
+          texto = "cookies on";
+        } else {
+          texto = "cookies off";
+        }
+
+        // Muestra el estado de las cookies en el elemento con ID "mostrar"
+        document.getElementById("mostrar").innerHTML = texto;
+      }
+
+      // Función que se ejecuta al hacer clic en el título
+      function cambiarTexto() {
+        // Cambia el contenido del elemento con ID "mostrar" para mostrar "Nuevo Contenido"
+        document.getElementById("mostrar").innerHTML = "Nuevo Contenido";
+      }
+    </script>
+  </body>
+</html>
