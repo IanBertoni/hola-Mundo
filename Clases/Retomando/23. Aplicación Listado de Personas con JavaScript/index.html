@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista</title>
-    <link
-      href="./Retomando/23. Aplicación Listado de Personas con JavaScript/css/styles.css"
-    />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="mostrarPersonas()">
     <div class="contenedor" id="cabecero">
       <h1>Listado de Personas</h1>
     </div>
     <div class="contenedor">
       <div class="elemento">
-        <ul id="personas">
-          <li>Ian Bertoni</li>
-        </ul>
+        <ul id="personas"></ul>
       </div>
     </div>
-    <script src="/Retomando/23. Aplicación Listado de Personas con
-    JavaScript/ts/app.ts"></script>
+
+    <div class="contenedor inputs-y-boton">
+      <form id="forma">
+        <div id="inputs-y-boton">
+          <input type="text" id="nombre" placeholder="Nombre" />
+          <input type="text" id="apellido" placeholder="Apellido" />
+          <button type="button" onclick="agregarPersona()">+</button>
+        </div>
+      </form>
+    </div>
+    <script src="./ts/app.js"></script>
+    <script src="./ts/persona.js"></script>
   </body>
 </html>
