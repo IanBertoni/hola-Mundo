@@ -1,7 +1,5 @@
 // transformar string a number
 
-import { log } from "console";
-
 let miNumero = "17";
 
 let edad = Number(miNumero);
